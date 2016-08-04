@@ -1,0 +1,199 @@
+@charset "utf-8";
+/********************************************
+*********************************************
+   Project ===== 소니 알파
+   FileName === layout.css
+   Date ======= 2013-06-18
+   Last ======= 2012-00-00
+*********************************************
+********************************************/
+@font-face {
+	font-family: 'NanumGothic';
+	src: url('/webroot/fonts/NanumGothic.eot');
+	src: local("☺"),
+		url('/webroot/fonts/NanumGothic.woff') format('woff'),
+		url('/webroot/fonts/NanumGothic.ttf') format('truetype'),
+		url('/webroot/fonts/NanumGothic.svg#webfonturzspG4F') format('svg');
+
+}
+
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,audio,video{margin:0;padding:0;-webkit-text-size-adjust:none}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body,input,textarea,select,button,table{font-size:14px;line-height:1.25em}
+body.s,.s input,.s textarea,.s select,.s button,.s table{font-family:Helvetica}
+body{position:relative;background-color:#141414;color:#000;-webkit-text-size-adjust:none}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{color:#000;text-decoration:none}
+.home_visited a:visited{color:#888}
+table{border-collapse:collapse}
+hr{display:none !important}
+
+a {text-decoration:none;}
+a img{ border:none;}
+
+#alphapwarp { width:100%;}
+
+#alphahead {width:100%; min-width:640px; max-width:960px;margin:0 auto;  }
+#alphabody {width:100%; min-width:640px; max-width:960px;margin:0 auto;}
+
+
+
+
+
+.btn_top{text-align:center; width:100%; margin-top:40px; display:inline-block;}
+.btn_top img{border:none 0;}
+
+
+
+#tab_menu{ display:block; background-color:#ddd; font-weight:bold; font-family:'나눔고딕','NanumGothic';width:100%; overflow:hidden;position:relative;}
+#tab_menu h2{position:absolute; overflow:hidden; width:1px; height:1px; font-size:0; line-height:0;}
+#tab_menu ul{height:40px; position:relative;border-bottom:5px solid #000; width:2000px;}
+#tab_menu li{float:left; height:40px; font-size:16px; line-height:40px; text-align:center; list-style:none; height:40px;  }
+#tab_menu li a{ text-decoration:none; display:block;  padding:0 40px;border-right:1px solid #aaa;}
+#tab_menu li.on{border-bottom:5px solid #ed5d24; background-color:#fff; background-image:url(/webroot/images/common/ico_tab.png);background-position:93% 50%; background-repeat:no-repeat;color:#f05a23;}
+#tab_menu li.on a{color:#f05a23;}
+#tab_menu li.off a{color:#777;}
+#tab_menu  .gallery{width:110px}
+.tabcontent{ background-color:#fff; text-align:center}
+#tab_btn{float:right;  display:none; position:relative; margin-top:-45px;}
+
+#sub_tit {width:100%;margin:24px 0;color:#f05b23;font-weight:bold;font-size:32px; font-family:'나눔고딕','NanumGothic'; display:inline-block;}
+#sub_tit h3{position:absolute; overflow:hidden; width:1px; height:1px; font-size:0; line-height:0;}
+#sub_tit p{float:left;line-height:100%}
+#sub_tit .cnter{margin:15px 0 0 10px;font-size:16px}
+#sub_tit ul{ margin:0; padding:0; float:right;}
+#sub_tit li{list-style:none; float:left;margin:0 0 0 3px; padding:0;}
+#sub_tit .title{  float:left; margin-bottom:30px;}
+#sub_tit .last{ margin:0;}
+
+
+#search_tab{}
+#search_tab .web{ margin-top:-41px; position:absolute;width:400px; margin-left:560px; font-family:"돋움"; font-size:12px; }
+#search_tab .web img{ margin-top:2px;}
+
+#search_tab .mobile{position:absolute;width:100%; background-color:#fff; margin:0; margin-top:-100px; max-width:960px; min-width:640px;}
+#search_tab .mobile .tabsearch{margin:10px 3%; float:right; width:400px;}
+
+#search_tab label{/* display:none */width:1px;height:1px;position:absolute;left:-99999em;}
+#search_tab label.show{display:block;}
+#search_tab .inp{ }
+#search_tab .inp input{width:240px;height:28px;padding-left:6px;line-height:23px;margin-left:2px; background-color:#fff;border-left:1px solid #bbbbbb;border-right:1px solid #d3d3d3;border-bottom:1px solid #d3d3d3;border-top:1px solid #b2b2b2;font-family:"돋움"; font-size:12px;color:#888888; position:relative; float:left; margin-top:2px;}
+
+
+
+#select_box{ float:left; margin-top:1px; display:inline-block}
+#select_box .input_tab{ font-size:12px; line-height:30px;}
+#select_box .input_tab ul{background-color:#fff;border-left:1px solid #bbbbbb;border-right:1px solid #d3d3d3;border-bottom:1px solid #d3d3d3;border-top:1px solid #b2b2b2;}
+
+#select_box .input_tab li{ list-style:none; cursor:pointer; }
+#select_box .input_tab li a{ color:#888888;padding-left:6px; width:94px;height:30px; display:block}
+#select_box .input_tab li a:hover{background-color:#09F;color:#fff; }
+#select_box .input_tab img{ border:none; float:right;}
+#select_box .input_tab .list{ position:absolute; display:none; width:100px; z-index:1000}
+#select_box .input_bg {background-image:url(/webroot/images/common/btn_select.png); background-position:right; background-repeat:no-repeat;}
+#select_box .contest li a{ width:144px;}
+.gnb_search{background-color:#eee; padding:10px 10px 10px 260px; margin:0 25px 10px 25px; width:640px; float:left ; display:none}
+.gnb_search .input_tab{}
+.gnb_search input{width:240px;height:28px;padding-left:6px;line-height:23px;margin-left:2px; background-color:#fff;border-left:1px solid #bbbbbb;border-right:1px solid #d3d3d3;border-bottom:1px solid #d3d3d3;border-top:1px solid #b2b2b2;font-family:"돋움"; font-size:12px;color:#888888; margin-top:2px; float:left;}
+.gnb_search img{margin-top:2px; float:left;}
+.list_none{clear:both;width:100%;height:215px; padding-top:185px;text-align:center;font-weight:bold;background: #fff url('/webroot/images/product/img_search_bg_a.png') no-repeat; background-position:right;  display:inline-block; font-family:'나눔고딕','NanumGothic'; font-size:16px;}
+.list_none .ico{width:23px; margin-right:10px;height:23px;line-height:24px;background-color:#f05a23;color:#fff;border:1px solid #da4e1b; display:inline-block;}
+#list_none_2{display:none;}
+#list_search{clear:both;width:100%; padding:20px 0;text-align:center;font-weight:bold; background-color:#f7f7f7;display:block; font-family:'나눔고딕','NanumGothic'; font-size:16px; margin-bottom:20px;}
+#list_search .ico{width:23px; margin-right:10px;height:23px;line-height:24px;background-color:#f05a23;color:#fff;border:1px solid #da4e1b; display:inline-block;}
+.org{color:#f05a23}
+.s2-bold{font-weight:bold;}
+.mglt{color:#333}
+
+.tit_search_b {float:right; height:32px;}
+label{display:none}
+label.show{display:inline;}
+.tit_search_b input{background-color:#000;color:#555;width:200px;height:30px;border:1px solid #222; border-right:none;padding-left:10px;line-height:30px; font-size:12px; font-family:"돋움"; float:left}
+.tit_search_b img{}
+
+
+#select_box_m{ margin-top:1px;}
+#select_box_m .input_tab{ font-size:12px; line-height:23px;}
+#select_box_m .input_tab ul{background-color:#fff;border-left:1px solid #bbbbbb;border-right:1px solid #d3d3d3;border-bottom:1px solid #d3d3d3;border-top:1px solid #b2b2b2;width:100px;  }
+#select_box_m .input_tab li{ list-style:none; cursor:pointer; }
+#select_box_m .input_tab li a{ color:#888888;padding-left:6px; width:94px;height:23px; display:block}
+#select_box_m .input_tab li a:hover{background-color:#09F;color:#fff; }
+#select_box_m .input_tab img{ border:none; float:right;}
+#select_box_m .input_tab .list{ position:absolute; display:none;}
+#select_box_m .input_bg {background-image:url(/webroot/images/common/btn_select_m.png); background-position:right; background-repeat:no-repeat;}
+
+.movies_tab_list{background-color:#fff;text-align:center; display:inline-block; width:100%; }
+.movies_tab_list .gallery_body{ margin:40px 36px; display:inline-block; }
+.movies_tab_list a{color:#7e7e7e;}
+.movies_tab_list .gallery_box{list-style:none; width:185px; height:215px; margin:11px 18px 11px 14px; font-size:12px; color:#7e7e7e; font-family:"돋움"; float:left}
+
+.movies_tab_list .on{ border:2px solid #f05b23; display:inline-block}
+.movies_tab_list .off{ border:2px solid #fff;}
+.movies_tab_list .textbox{ border:1px solid #d8d8d8; width:183px; height:28px;}
+.movies_tab_list .gallery_bg{ background-image:url(/webroot/images/gallery/img_gallery_media_sumbg.png); background-repeat:no-repeat; width:185px; height:185px; z-index:100; margin-top:-185px; position:absolute}
+
+.movies_tab_list .searchnum{ width:84px; border-right:1px solid #d8d8d8; text-align:left; padding-left:9px; float:left; margin-top:8px;}
+.movies_tab_list .date{ width:79px;text-align:left; padding-left:10px;float:left; margin-top:8px;}
+.movies_tab_list .info{ color:#fff; margin-top:150px; text-align:left; padding:0 10px;}
+.movies_tab_list .info2{ color:#fff; margin-top:-20px; text-align:center; height:20px}
+.movies_tab_list .ctname{border-right:1px solid #747474; text-align:left; padding-right:7px; display:inline-block}
+.movies_tab_list .ctpro{  border-right:1px solid #747474; text-align:left; padding:0 7px;  display:inline-block}
+.movies_tab_list .ctdat{ text-align:left; padding-left:7px;display:inline-block}
+.movies_tab_list .ctrec{ text-align:center;width:92px; height:28px; border-right:1px solid #d8d8d8; line-height:28px; float:left}
+.movies_tab_list .ctrec img{ margin:0 5px 0 0;}
+.movies_tab_list .ctcha img{ margin:0 5px 0 0;}
+.movies_tab_list .ctcha{ text-align:center;width:90px; height:28px; text-align:center;float:left; line-height:28px;}
+
+.movies_tab_list .on .ctcha{ color:#333}
+.movies_tab_list .on .ctrec{ color:#333}
+
+
+#paging{ display:inline-block; background-color:#006; margin-top:10px;}
+
+
+
+.paging{text-align:center; font-family:"돋움";font-size:12px; display:inline-block}
+.paging a{text-align:center;margin:0 1px;color:#777;font-size:12px;}
+.paging a.off{border:solid 1px #e5e5e5;padding:8px 10px; display:inline-block}
+.paging a.on{border:solid 1px #f05a23;padding:8px 10px; display:inline-block}
+.paging a img{ padding:10px; }
+
+.mobile .gallery_body{width:90%;}
+.mobile .gallery_body.w100p{width:100%;}
+.mobile .gallery_box{ float:left; margin:10px 30px}
+
+
+#layer_popup{ display:none}
+#layer_popup_bg{width:100%; height:100%; position:absolute; top:0; left:0;filter:alpha(opacity=80);opacity:0.8; z-index:1000; background-color:#000}
+#layer_popup_con{width:100%; position:absolute; top:0; left:0; z-index:1100;}
+
+/*0723 박정균 추가*/
+#foot_popup{ display:none}
+#foot_popup_bg{width:100%; position:absolute; top:0; left:0;filter:alpha(opacity=80);opacity:0.8; z-index:1000; background-color:#000}
+#foot_popup_con{width:100%; position:absolute; top:0; left:0; z-index:1100;}
+#foot_pop{width:640px;background-color:#fff;margin:0 auto;}
+#foot_pop .pop_content.pdt40{padding-top:40px;}
+#foot_pop .scroll_area{padding:0 40px 44px 40px;height:420px;line-height:20px;overflow:hidden;overflow-x:hidden;overflow-y:scroll;font-size:12px;color:#333333;}
+#foot_pop .scroll_area p{margin-top:18px;}
+#foot_pop .scroll_area p em{font-style:normal;}
+#foot_pop .scroll_area p.mt0{margin-top:0;}
+#foot_pop .pop_content{width:640px;padding-bottom:40px; solid #ccc;   solid #ccc;border-bottom:1px solid #ccc;}
+#foot_pop .pop_title{height:60px;line-height:61px;background-color:#f05a23;border-bottom:1px solid #a43d18;overflow:hidden;}
+#foot_pop .pop_title h1{float:left; padding-left:29px;font-size:26px;font-weight:bold;color:#fff;font-family:'나눔고딕','NanumGothic';}
+#foot_pop .pop_title a{width:60px;height:60px;display:block;float:right;}
+#foot_pop .counsel{font-size:12px;padding-left:40px; }
+#foot_pop .counsel h2{padding:38px 0 20px 0;font-size:16px;font-weight:bold;color:#f05a23;font-family:'나눔고딕','NanumGothic';}
+#foot_pop .counsel ul{margin:20px 0;}
+#foot_pop .counsel ul li{padding-left:10px;line-height:20px;list-style:none;background:url(/webroot/images/academy/list_blt.gif) no-repeat left center;}
+#foot_pop .counsel ul li span{font-weight:bold;color:#333333;}
+
+
+/* 0725 박정균 추가 */
+.movies_tab_list .gallery_bg2{ background-image:url(/webroot/images/gallery/img_gallery_media_sumbg.png); background-repeat:no-repeat; width:185px; height:185px; z-index:100; margin-top:-185px; position:absolute; *margin-left:-92px;}
+.movies_tab_list .gallery_bg3{ background-image:url(/webroot/images/gallery/img_gallery_media_sumbg_2.png); background-repeat:no-repeat; width:185px; height:185px; z-index:100; margin-top:-185px; position:absolute; *margin-left:-92px;}
+.movies_tab_list .info2{ color:#fff; margin-top:165px;text-align:center; height:20px}
+
+

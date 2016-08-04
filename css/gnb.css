@@ -1,0 +1,155 @@
+@charset "utf-8";
+/********************************************
+*********************************************  
+   Project ===== 소니 알파
+   FileName === base.css
+   Date ======= 2013-06-18
+   Last ======= 2012-00-00
+*********************************************
+********************************************/
+
+
+
+
+#gnbweb{width:100%; }
+
+#gnbmain img {border:none}
+#gnbmain ul { list-style:none}
+#gnbmain li { float:left}
+/*0731 수정*/
+#gnbmain .logo {margin:28px 180px  0px 8px; float:left}
+#gnbmain .menu { float:left;padding:37px 0 0 0;}
+#gnbmain .menu img{ margin:0 15px;}
+#store{ text-align:right;border-bottom:1px solid #f05a23;}
+#gnbmain {height:90px;border-bottom:1px solid #f05a23;}
+#gnbmain .on{margin-top:5px;color:#f05a23}
+/**/
+#gnbmain .off{ margin-top:5px}
+#gnbmain .border {border-right:1px solid #282828;}
+#gnbmain .awards{float:right; margin-left:50px;}
+
+#gnbsnb {background-image:url(/webroot/images/common/bg_snb.png); height:35px; line-height:35px;  font-weight:bold; font-size:12px; font-family:"Apple SD Gothic Neo", "AppleGothic", "Apple Gothic", "NanumGothic","돋움"; display:none; }
+#gnbsnb .snb_menu{ margin:0 auto;}
+#gnbsnb .on{background-color:#FFF;  float:left;}
+#gnbsnb .off{float:left;}
+#gnbsnb .on a{  color:#f05a23;padding:0 25px;height:35px; display:inline-block}
+#gnbsnb .off a{ color:#FFF;padding:0 25px;height:35px;display:inline-block}
+#gnbsnb .bar{ padding:0 1px;background-image:url(/webroot/images/common/img_snb_bar.png); background-repeat:no-repeat; height:35px;float:left;}
+#gnbsublist {background-color:#fff; display:inline-block; width:100%;  font-family:"Apple SD Gothic Neo", "AppleGothic", "Apple Gothic", "돋움"; }
+#gnbsublist .centerline1{ background-color:#e4e4e4; width:1px; float:left; margin:15px 0; height:200px;}
+#gnbsublist .centerline2{ background-color:#e4e4e4; width:1px; float:left; margin:15px 0; height:65px;}
+#gnbsublist .centerline3{ background-color:#e4e4e4; width:1px; float:left; margin:15px 0; height:105px;}
+#gnbsublist .tit{float:left; margin:5px;width:95px; text-align:center; font-size:18px; line-height:30px; font-weight:bold;color:#f05a23}
+#gnbsublist .menu {float:left; padding:10px 20px}
+#gnbsublist li img{ margin-right:5px;}
+
+
+
+#gnbsublist .body{display:none;}
+#gnbsublist .body .left {float:left; width:330px}
+#gnbsublist .body .right {float:left; width:330px}
+#gnbsublist .body .tit img{ margin:20px 0;}
+#gnbsublist .body ul{ text-align:center;}
+#gnbsublist .body li{ margin:5px;  float:left;list-style:none}
+#gnbsublist .body li a{ width:98px; height:90px; padding-top:8px;font-size:11px;display:inline-block;}
+
+#gnbsublist .lens{display:none;}
+#gnbsublist .lens .left {float:left; width:495px}
+#gnbsublist .lens .right {float:left; width:165px}
+#gnbsublist .lens ul{ text-align:left; line-height:28px;}
+#gnbsublist .lens li{ margin:5px;float:left;list-style:none}
+#gnbsublist .lens li a{width:143px; padding-left:10px; height:28px;font-size:12px; display:inline-block;}
+
+
+#gnbsublist .accessory{display:none;}
+#gnbsublist .accessory .left {float:left; width:330px}
+#gnbsublist .accessory .right {float:left; width:330px}
+#gnbsublist .accessory .tit img{ margin-top:20px;}
+#gnbsublist .accessory ul{ text-align:left; line-height:28px;}
+#gnbsublist .accessory li{margin:5px; float:left;list-style:none}
+#gnbsublist .accessory li a{ width:143px; padding-left:10px; height:28px;font-size:12px; display:inline-block; }
+
+#gnbsublist .on{ border:1px solid #f05a23; color:#f05a23}
+#gnbsublist .on a{color:#f05a23}
+#gnbsublist .off a{color:#333}
+#gnbsublist .off{ border:1px solid #fff; color:#333}
+
+#gnbmobile{ display:none}
+
+#gnbmobile table{ width:100%; height:70px;}
+#gnbmobile caption{ visibility:hidden}
+#gnbmobile  {width:100%; max-width:960px; min-width:640px; border-bottom:2px solid #f05a23}
+#gnbmobile .logo{height:80px; background-color:#000; text-align:center}
+#gnbmobile .logo .fl{ float:left; margin-left:40px; margin-top:22px;}
+#gnbmobile .logo .fr{ float:right; margin-right:30px;margin-top:19px;}
+#gnbmobile .tb_bg{height:70px; background-image:url(/webroot/images/common/bg_gnb_m_off.png); text-align:center} 
+#gnbmobile .tb_bg img{}
+#gnbmobile .tb_bt{ width:71px;height:70px;} 
+#gnbmobile .tb_min{ width:4px;height:70px;}
+#gnbmobile .tb_bg .off{background-image:url(/webroot/images/common/bg_gnb_m_off.png); }
+#gnbmobile .tb_bg .off a{display:inline-block; width:100%; padding:25px 0; }
+
+#gnbmobile .tb_bg .on{background-image:url(/webroot/images/common/bg_gnb_m_on.png); }
+#gnbmobile .tb_bg .on a{display:inline-block; width:100%; padding:25px 0; }
+
+
+.swype { background-color:#000; text-align:center; font-family:"NanumGothic"; font-size:34px; line-height:34px;  color:#f05a23;width:100%; min-width:640px; overflow:hidden;position:relative;}
+.swype .swypegrop{position:relative; width:3000px; }
+.swype .swypegrop .img img{ margin:26px 2px 18px 2px;}
+.swype .swypegrop ul{ float:left;  min-width:640px; width:100%}
+.swype .swypegrop ul li{ list-style:none;} 
+.swype .swypegrop .title{height:56px; border-bottom:2px solid #f05a23}
+.swype .swypegrop .sub{ display:block} 
+
+
+.swype .swypegrop .sub .tit{float:left; margin:5px;width:95px; text-align:center; font-size:18px; line-height:30px; font-weight:bold;color:#f05a23}
+.swype .swypegrop .sub .menu{float:left; padding:10px 20px}
+.swype .swypegrop .sub .left {float:right; width:76%; }
+.swype .swypegrop .sub .right {float:right; width:76%}
+.swype .swypegrop .sub .tit{width:18%; float:left;  padding:20px 0; text-align:center; font-size:28px;color:#f05a23; line-height:40px; font-family:"Apple SD Gothic Neo", "AppleGothic", "Apple Gothic", "NanumGothic"}
+.swype .swypegrop .sub ul{text-align:left; float:right;padding:20px 0; min-width:460px;  min-height:160px;}
+.swype .swypegrop .sub li{float:left; background-image:url(/webroot/images/common/img_gnb_m_ico.png); color:#fff;width:45%; padding-left:2%; font-size:20px; height:50px; line-height:50px; font-family:"Apple SD Gothic Neo", "AppleGothic", "Apple Gothic", "NanumGothic";list-style:none}
+
+
+.swype .swypegrop .sub .off a{color:#fff; width:100%; display:inline-block}
+.swype .swypegrop .sub .on a{color:#f05a23;width:100%; display:inline-block}
+.swype .swypegrop .sub .off{background-image:url(/webroot/images/common/img_gnb_m_ico.png); background-position:left; background-repeat:no-repeat;}
+.swype .swypegrop .sub .on{background-image:url(/webroot/images/common/img_gnb_m_ico.png); background-position:left; background-repeat:no-repeat; color:#f05a23;line-height:50px; text-decoration:underline}
+.swype .swypegrop .sub .menu{ border-bottom:2px solid #333333; display:inline-block; width:100%}
+.swype .bdernone{ border:none}
+
+.noswype { background-color:#000; height:280px;}
+.noswype ul{text-align:left; float:left;padding:20px 0; width:80%;}
+.noswype li{float:left; background-image:url(/webroot/images/common/img_gnb_m_ico.png);color:#fff;width:80%; padding-left:3%; margin-left:5%; font-size:20px; height:50px; line-height:50px; font-family:"Apple SD Gothic Neo", "AppleGothic", "Apple Gothic", "NanumGothic";list-style:none;background-image:url(/webroot/images/common/img_gnb_m_ico.png); background-position:left; background-repeat:no-repeat;}
+.noswype .on a{text-decoration:underline; color:#f05a23}
+.noswype .off a{color:#fff}
+.noswype .dp4 ul{text-align:left; float:left;padding:20px 0 20px 200px; width:300px;  position:absolute; margin-top:50px;}
+.noswype .dp4 li{ background:none}
+#noswype{ display:none}
+#gnbm3{ display:none;}
+#gnbm4{ display:none;}
+#gnbm5{ display:none;}
+#gnbm6{ display:none;}
+#gnbm6{ }
+
+#gnbmsearch{height:85px; background-color:#000; width:100%;}
+#gnbmsearch .bl{ float:left; margin-top:-83px; display:none}
+#gnbmsearch .tit{ text-align:center; font-family:"Apple SD Gothic Neo", "AppleGothic", "Apple Gothic", "NanumGothic"; font-size:34px; width:100%; line-height:85px; color:#f05a23;overflow:hidden;}
+#gnbmsearch .br{ float:right; margin-top:-83px;}
+#gnbsearcharea { height:100px; width:100%; background-color:#000;border-top:2px solid #333333; display:none }
+#gnbsearcharea input{background-color:#000;border:2px solid #474747;width:55%; padding-left:1%; height:54px;font-size:24px;font-family:"NanumGothic"; line-height:54px;color:#888888; margin-top:20px; float:left; margin-left:2%;}
+#gnbsearcharea img{ margin-top:20px; margin-right:2%; float:right}
+
+
+#select_box_m{ margin-top:20px; margin-left:2%; float:left; width:20%;}
+#select_box_m .input_tab{ font-size:24px;font-family:"Apple SD Gothic Neo", "AppleGothic", "Apple Gothic", "NanumGothic"; line-height:54px; width:100%;}
+#select_box_m .input_tab .input_bg{ background-image:url(/webroot/images/common/btn_select_m.png);height:54px; background-position:right; background-repeat:no-repeat;}
+#select_box_m .input_tab .input_bg a:hover{ background-image:url(/webroot/images/common/btn_select_m.png); background-position:right; background-repeat:no-repeat; }
+#select_box_m .input_tab .top{ width:100%}
+#select_box_m .input_tab ul{background-color:#000;border:2px solid #474747; width:20%; }
+#select_box_m .input_tab li{ list-style:none; cursor:pointer; }
+#select_box_m .input_tab li a{ color:#888888;padding-left:6px; display:block}
+#select_box_m .input_tab li a:hover{background-color:#09F;color:#fff; }
+#select_box_m .input_tab img{ border:none; float:right;}
+#select_box_m .input_tab .list{ position:absolute; display:none;}
+

@@ -1,0 +1,360 @@
+@charset "utf-8";
+/********************************************
+*********************************************
+   Project ===== 소니 알파
+   FileName === academy.css
+   Date ======= 2013-07-09
+   Last ======= 2012-00-00
+*********************************************
+********************************************/
+
+/* 강좌신청_01_목록보기 , 결과있음 , 결과없음 */
+.academy_head{width:100%;margin:20px 0;}
+.academy_head:after{content:"";display:block;clear:both;}
+.academy_head h3{height:40px;float:left;line-height:40px;vertical-align:top;font-size:30px;font-weight:bold;color:#f05a23;font-family:'나눔고딕','NanumGothic';}
+.academy_head .list_btn{width:375px;height:40px;float:right;overflow:hidden;}
+.academy_head .list_btn li{float:left;margin-right:5px;list-style:none;}
+.academy_head .list_btn li.last{margin-right:0;}
+.academy_head .list_btn li a{width:117px;height:36px;line-height:40px;text-align:center;display:block;font-size:16px;font-weight:bold;color:#fff;font-family:'나눔고딕','NanumGothic';}
+.academy_head .list_btn li.off a{border:2px solid #3d3d3d}
+.academy_head .list_btn li.on a{border:2px solid #f05a23;}
+
+.date_all{width:100%;height:70px;position:relative;background-color:#3d3d3d;}
+.date_box{width:218px;vertical-align:middle;position:absolute;left:50%;top:0;margin-left:-116px;text-align:center;}
+.date_box:after{content:"";display:block;clear:both;}
+.date_box span{width:130px;height:70px;float:left;display:block;line-height:70px;font-size:36px;font-weight:bold;color:#fff;font-family:Arial;}
+.date_box a{width:14px;height:27px;overflow:hidden;float:left;display:block;background:url(/webroot/images/academy/academy_btn.png) no-repeat;}
+.date_box a.date_prev{background-position:0 0;margin:22px 25px 0 0;}
+.date_box a.date_next{background-position:-24px 0;margin:22px 0 0 25px;}
+
+.date_btn{width:140px;height:70px;position:absolute;right:0;top:0;background:url(/webroot/images/academy/btnwrap_shadow.png) no-repeat left center;}
+.date_btn li{width:70px;height:70px;float:left;list-style:none;}
+.date_btn li a{width:70px;height:70px;display:inline-block;font-size:12px;text-align:center;}
+.date_btn li span.date_list{width:19px;height:14px;margin:19px auto 9px;display:block;overflow:hidden;background:url(/webroot/images/academy/academy_btn.png) no-repeat -48px 0;}
+.date_btn li span.date_calendar{width:19px;height:14px;margin:19px auto 9px;display:block;overflow:hidden;background:url(/webroot/images/academy/academy_btn.png) no-repeat -76px 0;}
+.date_btn li.off a{color:#858585;}
+.date_btn li.on{background-color:#f05a23;}
+.date_btn li.on a{color:#fff;}
+.date_btn li.on span.date_list{background-position:-48px -24px;}
+.date_btn li.on span.date_calendar{background-position:-76px -28px;}
+
+#academy_lecture .course_tabbox{width:100%;background-color:#3d3d3d;border-top:1px solid #333333;}
+#academy_lecture .course_tabbox:after{content:"";display:block;clear:both;}
+#academy_lecture .course_tab{width:444px;height:45px;background-color:#3d3d3d;float:left;}
+#academy_lecture .course_tab ul{width:100%;}
+#academy_lecture .course_tab ul:after{content:"";display:block;clear:both;}
+#academy_lecture .course_tab ul li{width:111px;height:45px;float:left;list-style:none;}
+#academy_lecture .course_tab ul li a{display:block;height:45px;line-height:45px;text-align:center;background:url(/webroot/images/academy/list_bg.gif) no-repeat right center;font-size:14px;font-weight:bold;font-family:'나눔고딕','NanumGothic';}
+#academy_lecture .course_tab ul li.off a{color:#777777;}
+#academy_lecture .course_tab ul li.on a{background-color:#fff;color:#f05a23;}
+#academy_lecture .course_tabbox .search_btnbox{width:45px;height:45px;float:right;}
+#academy_lecture .course_tabbox .search_btn{width:16px;height:16px;margin:15px 26px 0 0;display:block;overflow:hidden;background:url(/webroot/images/academy/academy_btn.png) no-repeat -106px 0;}
+
+#academy_lecture .course_all{width:100%;background-color:#fff;}
+#academy_lecture .course_all .cours_list{overflow:hidden;}
+#academy_lecture .course_all .cours_list > li{width:320px;float:left;list-style:none;}
+#academy_lecture .course_all .cours_list > li > div.bottomnone{border-bottom:0;}
+#academy_lecture .course_all .cours_list > li > div.last{border-right:0;}
+#academy_lecture .course_all .cours_list > li > div{width:100%;height:413px;border-right:2px solid #e5e5e5;border-bottom:2px solid #e5e5e5;font-size:12px;}
+#academy_lecture .course_all .cours_list > li > div.none_list{background:url(/webroot/images/academy/no_list.png) no-repeat 0 0;}
+#academy_lecture .course_all .cours_list > li > div ul{width:270px;margin:0 0 16px 30px;border-top:1px solid #e5e5e5;}
+#academy_lecture .course_all .cours_list > li > div ul li{border-bottom:1px solid #e5e5e5;height:29px;line-height:28px;list-style:none;}
+#academy_lecture .course_all .cours_list > li > div ul li span{font-size:12px;display:inline-block;height:30px;}
+#academy_lecture .course_all .cours_list > li > div ul li span + span{color:#333333;}
+#academy_lecture .course_all .cours_list > li > div ul li span.black{font-size:12px;font-weight: 900 !important;color:#333333;}
+#academy_lecture .course_all .cours_list > li > div ul li span:first-child{width:56px;margin-right:21px;font-weight:bold;color:#777777;}
+#academy_lecture .course_all .cours_list .cours_title{padding:29px 0 28px 30px;color:#333333;line-height:26px;*line-height:20px;font-size:20px;font-weight:bold;font-family:'나눔고딕','NanumGothic';}
+#academy_lecture .course_all .cours_list .cours_title a{width:100%;height:50px;display:block;overflow:hidden;color:#333333;}
+#academy_lecture .course_all .cours_list .cours_text{width:270px;height:60px;margin:0 0 13px 30px;line-height:17px;color:#333333;}
+#academy_lecture .course_all .cours_list .cours_btn{width:110px;height:41px;display:block;margin:0 0 30px 30px;}
+
+#academy_lecture .course_tabbox .search_inputbox{width:235px;height:31px;overflow:hidden;float:left;margin:7px 0 0 275px;background:url(/webroot/images/academy/searchbox_bg.gif) no-repeat 0 0; display:none}
+#academy_lecture .course_tabbox .search_inner{position:relative;height:31px;}
+#academy_lecture .course_tabbox .search_inner label.blind{position:absolute; left:-99999em;}
+#academy_lecture .course_tabbox .search_btnwht{width:16px;height:16px;position:absolute;right:24px;top:8px;display:inline-block;overflow:hidden;background:url(/webroot/images/academy/academy_btn.png) no-repeat -106px -26px;}
+#academy_lecture .course_tabbox .search_input{width:174px;height:23px;padding:4px;border:0;background:transparent;color:#f05a23;font-size:14px;font-weight:bold;font-family:'나눔고딕','NanumGothic';}
+#academy_lecture .course_all .none_search{width:960px;height:400px;overflow:hidden;text-align:center;background:url(/webroot/images/academy/none_search.png) no-repeat 0 0;}
+#academy_lecture .course_all .none_search p{height:25px;line-height:25px;vertical-align:middle;color:#333333;font-size:16px;margin-top:200px;font-weight:bold;font-family:'나눔고딕','NanumGothic';}
+#academy_lecture .course_all .none_search p span.f05a23{color:#f05a23;}
+#academy_lecture .course_all .none_search p span.search_blt{width:25px;height:25px;line-height:25px;display:inline-block;vertical-align:middle;margin-right:10px;overflow:hidden;background:url(/webroot/images/academy/academy_btn.png) no-repeat -132px 0;}
+#academy_lecture .course_all .search_result{border-bottom:1px solid #e5e5e5;text-align:center;padding:20px 50px;font-size:16px;font-weight:bold;font-family:'나눔고딕','NanumGothic';}
+#academy_lecture .course_all .search_result > div{margin:0 auto;background-color:#f7f7f7;}
+#academy_lecture .course_all .search_result span.f05a23{color:#f05a23;}
+#academy_lecture .course_all .search_result span.search_blt{width:25px;height:25px;display:inline-block;vertical-align:middle;margin-right:10px;overflow:hidden;background:url(/webroot/images/academy/academy_btn.png) no-repeat -132px 0;}
+
+/* 강좌신청_02_달력보기 */
+#academy_calendar .calendar_all{border-top:1px solid #333333;background-color:#fff;}
+#academy_calendar .calendar_all table{width:100%;border-collapse:collapse;}
+#academy_calendar .calendar_all table caption{display:none}
+#academy_calendar .calendar_all table > thead{font-size:12px;color:#555555;font-family:Tahoma;}
+#academy_calendar .calendar_all table > thead > tr > th{border-right:1px solid #c8c8c8;border-bottom:1px solid #acacac;height:40px;background-color:#e1e1e1;text-align:center;}
+#academy_calendar .calendar_all table > thead > tr > th.last{border-right:0;}
+#academy_calendar .calendar_all table > thead > tr > th.sun{color:#c70000;}
+#academy_calendar .calendar_all table > tbody > tr > td{width:137px;height:116px;border-right:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;}
+#academy_calendar .calendar_all table > tbody > tr > td > div{width:100%;height:100%;position:relative;}
+#academy_calendar .calendar_all table > tbody > tr > td.last{border-right:0;}
+#academy_calendar .calendar_all table > tbody > tr > td > div > span{position:absolute;left:10px;top:10px;color:#333333;font-size:14px;font-family:Tahoma;}
+#academy_calendar .calendar_all table > tbody > tr > td > div > span.sun{color:#c70000;}
+#academy_calendar .calendar_all table > tbody > tr > td > div > span.prevsun{color:#eba6a6;}
+#academy_calendar .calendar_all table > tbody > tr > td > div > span.prevday{color:#c4c4c4;}
+#academy_calendar .calendar_all table > tbody > tr > td > div > ul{position:absolute;left:10px;top:32px;width:112px;font-size:11px;}
+#academy_calendar .calendar_all table > tbody > tr > td ul > li{width:106px;height:14px;margin-bottom:5px;padding-left:20px;line-height:14px;list-style:none;}
+#academy_calendar .calendar_all table > tbody > tr > td ul > li > a{width:106px;height:14px;line-height:14px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#333333;}
+#academy_calendar .calendar_all table > tbody > tr > td ul > li.ava{background:url(/webroot/images/academy/academy_btn.png) no-repeat -167px 0;}
+#academy_calendar .calendar_all table > tbody > tr > td ul > li.fih{background:url(/webroot/images/academy/academy_btn.png) no-repeat -167px -15px;}
+#academy_calendar .calendar_all table > tbody > tr > td ul > li.end{background:url(/webroot/images/academy/academy_btn.png) no-repeat -167px -30px;}
+#academy_calendar .calendar_bottom{padding-top:13px;height:27px;background-color:#f7f7f7;text-align:right;font-size:12px;font-weight:bold;}
+#academy_calendar .calendar_bottom span{height:14px;display:inline-block;overflow:hidden;margin-right:15px;padding-left:19px;}
+#academy_calendar .calendar_bottom span.ava{background:url(/webroot/images/academy/academy_btn.png) no-repeat -167px 0;color:#f05a23;}
+#academy_calendar .calendar_bottom span.fih{background:url(/webroot/images/academy/academy_btn.png) no-repeat -167px -15px;color:#5e84b0;}
+#academy_calendar .calendar_bottom span.end{background:url(/webroot/images/academy/academy_btn.png) no-repeat -167px -30px;color:#777777;}
+
+/* 강좌신청_03_강의정보 */
+#academy_riverinfor .lecture_info{width:100%;}
+#academy_riverinfor .lecture_info:after{content:"";display:block;clear:both;}
+#academy_riverinfor .lecture_info .lecture_left{width:570px;float:left;margin-right:10px;padding:22px 4%;background-color:#fff;}
+#academy_riverinfor .lecture_left h4{border-bottom:3px solid #f05a23;padding-bottom:40px;line-height:42px;font-size:36px;font-weight:bold;font-family:'나눔고딕','NanumGothic';color:#000;}
+#academy_riverinfor .lecture_left h5{margin:40px 0 20px;line-height:100%;font-size:18px;font-weight:bold;font-family:'나눔고딕','NanumGothic';color:#333333;}
+#academy_riverinfor .lecture_left .lecture_text{line-height:20px;font-size:12px;color:#333333;}
+#academy_riverinfor .lecture_left .lecture_content{border-top:1px solid #e5e5e5;}
+#academy_riverinfor .lecture_left .lecture_content div{border-bottom:1px solid #e5e5e5;padding:15px 0;overflow:hidden;}
+#academy_riverinfor .lecture_left .lecture_content div p{width:188px;margin-right:50px;float:left;font-size:14px;font-weight:bold;font-family:'나눔고딕','NanumGothic';color:#ed5d24;}
+#academy_riverinfor .lecture_left .lecture_content div ul{float:left;font-size:12px;color:#333333;line-height:20px;}
+#academy_riverinfor .lecture_left .lecture_content div ul li{list-style:none;}
+#academy_riverinfor .lecture_left .lecture_tip{font-size:12px;color:#333333;margin-bottom:50px;}
+#academy_riverinfor .lecture_left .lecture_tip li{padding-left:10px;list-style:none;line-height:20px;background:url(/webroot/images/academy/list_blt.gif) no-repeat left center;}
+#academy_riverinfor .lecture_left .list_btn{text-align:center;}
+#academy_riverinfor .lecture_right{width:290px;float:right;background-color:#3d3d3d;padding-bottom:40px;}
+#academy_riverinfor .lecture_right ul{width:248px;margin:20px auto;background:url(/webroot/images/academy/corse_listbg.gif) no-repeat left top;font-size:12px;color:#fff;}
+#academy_riverinfor .lecture_right ul li{line-height:33px;list-style:none;background:url(/webroot/images/academy/corse_listbg.gif) no-repeat left bottom;}
+#academy_riverinfor .lecture_right ul li span:first-child{display:inline-block;width:50px;margin-right:30px;color:#9e9e9e;}
+#academy_riverinfor .lecture_right ul li span.bold{font-weight:bold;}
+#academy_riverinfor .lecture_right .lecture_btn{text-align:center;}
+
+/* 02_강좌동영상 */
+#academy_movie .lecture_left1{width:720px;float:left;margin-right:20px;}
+#academy_movie .lecture_left1 .inner_box{padding:36px 45px 70px 45px;background-color:#fff;}
+#academy_movie .lecture_left1 h4{border-bottom:3px solid #f05a23;padding-bottom:7px;line-height:33px;font-size:28px;font-weight:bold;font-family:'나눔고딕','NanumGothic';color:#000;}
+#academy_movie .lecture_left1 .posts{font-size:14px;font-weight:bold;font-family:'나눔고딕','NanumGothic';color:#555555;}
+#academy_movie .lecture_left1 .lecture_text1{margin:20px 0 20px;line-height:22px;font-size:12px;color:#333333;}
+#academy_movie .lecture_left1 .lecture_text1 span{display:block;margin:10px 0;font-size:14px;font-weight:bold;font-family:'나눔고딕','NanumGothic';color:#333333;}
+#academy_movie .lecture_left1 .lecture_text1 span em{text-decoration:underline;font-style:normal;}
+#academy_movie .lecture_left1 .photo_box{width:631px;overflow:hidden;margin-bottom:}
+#academy_movie .lecture_left1 .photo_box .photo_left{width:419px;float:left;}
+#academy_movie .lecture_left1 .photo_box .photo_right{width:202px;float:left;}
+#academy_movie .lecture_left1 .photo_box .photo_bottom{clear:both;padding-top:10px;color:#777777;font-size:12px;}
+#academy_movie .lecture_left1 .photo_box .photo_right p:first-child{margin-bottom:11px;}
+#academy_movie .lecture_left1 .photo_tip{margin-top:40px;line-height:25px;font-size: 12px;color:#333333;}
+#academy_movie .lecture_left1 .photo_tip span{height:20px;line-height:20px;display:inline-block;padding-left:23px;margin-bottom:2px;background:url(/webroot/images/academy/academy_btn.png) no-repeat 0px -48px;font-size:14px;font-weight:bold;font-family:'나눔고딕','NanumGothic';color:#000000;}
+#academy_movie .lecture_right2{width:220px;float:left;padding-bottom:40px;} /*0806*/
+#academy_movie .lecture_right2 .cf_tab{width:220px;overflow:hidden;text-align:center;background:#b5b5b5 url(/webroot/images/academy/cftab_bg.gif) repeat-x left bottom;}
+#academy_movie .lecture_right2 .cf_tab li{width:110px;height:37px;line-height:37px;float:left;list-style:none;}
+#academy_movie .lecture_right2 .cf_tab li a{display:block;font-size:14px;font-weight:bold;font-family:'나눔고딕','NanumGothic';}
+#academy_movie .lecture_right2 .cf_tab li.on a{background-color:#fff;color:#f05a23;}
+#academy_movie .lecture_right2 .cf_tab li.off a{background-color:#b5b5b5;color:#666666;}
+#academy_movie .lecture_right2 .cf_list{padding:16px 25px;}
+#academy_movie .lecture_right2 .cf_list .cf_searchbox{width:170px;overflow:hidden;}
+#academy_movie .lecture_right2 .cf_list .cf_searchbox label.blind{position:absolute;left:-99999em;}
+#academy_movie .lecture_right2 .cf_list .cf_search{width:122px;height:30px;line-height:30px;display:inline-block;float:left;padding-left:8px;border:1px solid #b2b2b2;color:#888888;font-size:12px;}
+#academy_movie .lecture_right2 .cf_list .cf_btnbox{width:37px;height:30px;display:inline-block;float:left;text-align:center;border-top:1px solid #b2b2b2;border-right:1px solid #b2b2b2;border-bottom:1px solid #b2b2b2;}
+#academy_movie .lecture_right2 .cf_list .cf_btn{width:16px;height:16px;display:inline-block;overflow:hidden;margin-top:7px;background:url(/webroot/images/academy/academy_btn.png) no-repeat -106px 0;}
+#academy_movie .lecture_right2 .cf_list ul{margin-top:16px;}
+#academy_movie .lecture_right2 .cf_list ul li{margin-bottom:10px;list-style:none;font-size:12px;font-family:'돋움';}
+#academy_movie .lecture_right2 .cf_list ul li.last{margin-bottom:0;}
+#academy_movie .lecture_right2 .cf_list ul li a{width:170px;height:170px;display:block;position:relative;}
+#academy_movie .lecture_right2 .cf_list ul li a span{width:170px;height:62px;color:#fff;vertical-align:bottom;display:block;position:absolute;left:0;bottom:0;background:url(../images/academy/sum_gr_bg.png) no-repeat 0 0;}
+#academy_movie .lecture_right2 .cf_list ul li a span em{width:160px;padding:5px;display:block;position:absolute;left:0;bottom:0;font-style:normal;}
+#academy_movie .lecture_right2 .cf_list ul li div{height:28px;line-height:28px;border:1px solid #d8d8d8;text-align:center;}
+#academy_movie .lecture_right2 .cf_list ul li div span{color:#d8d8d8;}
+#academy_movie .lecture_right2 .cf_list .cf_page{text-align:center;font-size:12px;padding-top:16px;}
+#academy_movie .lecture_right2 .cf_list .cf_page a{color:#777;}
+#academy_movie .lecture_right2 .cf_list .cf_page a.off{font-weight:0;}
+#academy_movie .lecture_right2 .cf_list .cf_page a.on{font-weight:bold;}
+#academy_movie .lecture_right2 .cf_list .cf_page .prev{width:6px;height:11px;display:inline-block;overflow:hidden;margin-right:20px;background:url(/webroot/images/academy/academy_btn.png) no-repeat 0 -81px;}
+#academy_movie .lecture_right2 .cf_list .cf_page .next{width:6px;height:11px;display:inline-block;overflow:hidden;margin-left:20px;background:url(/webroot/images/academy/academy_btn.png) no-repeat -16px -81px;}
+/* CSS 추가 0801 */
+#academy_movie .lecture_right2 input{width:122px;height:28px;padding-left:6px;line-height:23px;margin-left:27px;background-color: #fff;border-left:1px solid #bbbbbb;border-right: 1px solid #d3d3d3;border-bottom: 1px solid #d3d3d3;border-top: 1px solid #b2b2b2;font-family: "돋움";font-size: 12px;color:#888888;float:left;}/*0806*/
+#academy_movie .lecture_right2 label{display:none;}
+#academy_movie .lecture_right2 .select_cf{width:135px;margin:15px 0 5px 27px;}
+#academy_movie .lecture_right2 .input_tab ul{width:124px;}
+#academy_movie .lecture_right2 .input_tab li a{width:120px;}
+#academy_movie .lecture_right2 .search_true{margin-top:30px;text-align:center;font-weight:bold;font-family:"나눔고딕";}
+#academy_movie .lecture_right2 .search_true p{margin:15px 0 40px;line-height:24px;color:#333;font-size:14px;}
+#academy_movie .lecture_right2 .search_true p span{color:#f05a23;}
+#academy_movie .lecture_right2 .ico{width:23px;margin-right: 10px;height: 23px;line-height: 24px;background-color:#f05a23;color:#fff;border: 1px solid #da4e1b;display:inline-block;font-size: 16px;}
+#academy_movie .lecture_right2 .cf_searbox img{vertical-align:top;}
+#academy_movie .search_box{overflow:hidden;margin-bottom:20px;padding:18px 0;background-color:#f2f2f2;}
+#academy_movie .search_box .cf_searbox a{float:left;}
+#academy_movie .cf_list1{background-color:#fff;} /*0806*/
+#academy_movie .cf_list2{background-color:#fff;}
+/* 위치안내 레이어팝업 */
+#layer_pop{width:640px;background-color:#fff;margin:0 auto;}
+#layer_pop .pop_content{width:640px;padding-bottom:40px; solid #ccc; height:280px;  solid #ccc;border-bottom:1px solid #ccc;}
+#layer_pop .pop_title{height:60px;line-height:61px;background-color:#f05a23;border-bottom:1px solid #a43d18;overflow:hidden;}
+#layer_pop .pop_title h1{float:left; padding-left:29px;font-size:26px;font-weight:bold;color:#fff;font-family:'나눔고딕','NanumGothic';}
+#layer_pop .pop_title a{width:60px;height:60px;display:block;float:right;}
+#layer_pop .nav_info{width:638px;margin-top:40px;padding:0 40px;}
+#layer_pop .nav_info:after{content:"";display:block;clear:both;}
+#layer_pop .info_left li{height:51px;line-height:51px;list-style:none; border-bottom:2px solid #f05a23}
+#layer_pop .nav_info .info_left{width:100px;float:left;text-align:right;font-size:16px;font-weight:bold;color:#f05a23;font-family:'나눔고딕','NanumGothic';}
+#layer_pop .nav_info .info_right{width:420px;margin-left:20px;float:left;font-size:12px;color:#333333;}
+#layer_pop .nav_info .info_right li{padding:18px 0;list-style:none; border-bottom:2px solid #ccc}
+#layer_pop .nav_info .info_right li p{line-height:20px;margin:10px 0 20px;}
+#layer_pop .nav_info .info_right li em{display:block;font-weight:bold;font-style:normal;}
+
+/* 수강신청안내 레이어팝업 */
+#layer_pop .pop_wrap{padding:35px 40px; }
+#layer_pop .pop_wrap p{margin-bottom:40px;font-size:12px;color:#333333;line-height:20px;}
+#layer_pop .pop_wrap h2{margin-bottom:20px;padding-left:13px;background:url(/webroot/images/academy/big_blt.gif) no-repeat left center;font-size:16px;font-weight:bold;color:#333333;font-family:'나눔고딕','NanumGothic';}
+#layer_pop .pop_wrap .step_box{margin-bottom:20px;}
+#layer_pop .pop_wrap .step_box img{ width:560px}
+#layer_pop .pop_wrap .note_box{padding:20px 38px;background-color:#eeeeee;border-top:1px solid #ccc;}
+#layer_pop .pop_wrap .note_box ul{font-size:12px;}
+#layer_pop .pop_wrap .note_box ul li{line-height:20px;list-style:none;}
+#layer_pop .pop_wrap .note_box ul li span{display:inline-block;padding-left:15px;background:url(/webroot/images/academy/list_blt.gif) no-repeat left center;}
+#layer_pop .pop_wrap .note_box h3{height:18px;margin-bottom:15px;font-size:14px;font-weight:bold;color:#000;font-family:'나눔고딕','NanumGothic';}
+#layer_pop .pop_wrap .note_box h3 span{width:18px;height:15px;display:inline-block;overflow:hidden;margin-right:5px;background:url(/webroot/images/academy/academy_btn.png) no-repeat 0 -52px;}
+
+/* 이용약관 레이어팝업 , 개인정보취급방침 레이어팝업 */
+#layer_pop .pop_content.pdt40{padding-top:40px;}
+#layer_pop .scroll_area{padding:0 40px 44px 40px;height:420px;line-height:20px;overflow:hidden;overflow-x:hidden;overflow-y:scroll;font-size:12px;color:#333333;}
+#layer_pop .scroll_area p{margin-top:18px;}
+#layer_pop .scroll_area p em{font-style:normal;}
+#layer_pop .scroll_area p.mt0{margin-top:0;}
+
+/* 상담안내 레이어팝업 */
+#layer_pop .counsel{font-size:12px;padding-left:40px;}
+#layer_pop .counsel h2{padding:38px 0 20px 0;font-size:16px;font-weight:bold;color:#f05a23;font-family:'나눔고딕','NanumGothic';}
+#layer_pop .counsel ul{margin:20px 0;}
+#layer_pop .counsel ul li{padding-left:10px;line-height:20px;list-style:none;background:url(/webroot/images/academy/list_blt.gif) no-repeat left center;}
+#layer_pop .counsel ul li span{font-weight:bold;color:#333333;}
+
+/* 404에러, 시스템점검중 */
+#etc_all .message_box{margin:100px 0;font-size:12px;color:#fff;text-align:center;}
+#etc_all .message_box p:first-child{margin-bottom:30px;font-size:30px;font-weight:bold;color:#f05a23;font-family:'나눔고딕','NanumGothic';}
+#etc_all .message_box p em{font-style:normal;}
+#etc_all .message_box .er_title{margin:45px 0 18px;font-size:32px;font-weight:bold;color:#f05a23;font-family:'나눔고딕','NanumGothic';}
+#etc_all .message_content{line-height:20px;font-size:14px;font-weight:bold;color:#fff;font-family:'나눔고딕','NanumGothic';}
+#etc_all .message_btn{margin-top:20px;}
+#etc_all .time_box{width:340px;padding:20px 0;margin:30px auto 0 auto;border-top:2px solid #1f1f1f;border-bottom:2px solid #1f1f1f;font-family:'나눔고딕','NanumGothic';}
+#etc_all .time_box div:first-child{font-size:16px;}
+#etc_all .time_box .rem_time{margin-top:12px;font-size:20px;font-weight:bold;}
+
+/* 아카데미 리사이즈 0801 */
+#academy_lecture .more_btn{text-align:center;padding:10px 0;display:none;}
+#academy_lecture .mobile .more_btn{display:block;}
+#academy_lecture .mobile .cours_list li:first-child > div{height:413px;}
+#academy_lecture .mobile .cours_list .list_hide{display:none;}
+#academy_lecture .mobile .cours_list li{width:100%;}
+#academy_lecture .mobile .cours_list li > div ul{width:100%;}
+#academy_lecture .mobile .cours_list li > div .cours_text{width:80%;}
+#academy_lecture .mobile .cours_list .cours_btn{width:100%;text-align:center;margin: 0 0 14px 0;}
+
+#academy_calendar .calendar_all.mobile table > tbody > tr > td > div > ul{width:88%;}
+#academy_calendar .calendar_all.mobile table > tbody > tr > td > div > ul > li{width:88%;}
+#academy_calendar .calendar_all.mobile table > tbody > tr > td > div > ul > li > a{width:88%;}
+#academy_calendar .calendar_bottom.mobile{padding-right:2%;}
+
+#academy_movie .lecture_left1.mobile{width:100%;margin:0;float:none;}
+#academy_movie .lecture_left1.mobile iframe{width:100%;}
+#academy_movie .lecture_left1.mobile .photo_box{width:100%;}
+#academy_movie .lecture_left1.mobile .photo_box img{width:100%;}
+#academy_movie .lecture_right2.mobile {width:100%;float:none;}
+#academy_movie .lecture_right2.mobile .search_box{width:100%;}/*0806*/
+#academy_movie .lecture_right2.mobile .search_box .cf_searbox{width:100%;float:left;}/*0806*/
+#academy_movie .lecture_right2.mobile .search_box .cf_searbox input{width:87%;margin-left:27px;}/*0806*/
+#academy_movie .lecture_right2.mobile .search_box .select_cf{width:15%;float:left;margin:0 27px 5px 27px;}/*0806*/
+#academy_movie .search_true.mobile .ico{width:25px;height:25px;text-align:center;display:inline-block;}
+#academy_movie .select_cf.mobile{margin-top:16px;}
+#academy_movie .cf_list.mobile ul{width:96%;overflow:hidden;}
+#academy_movie .cf_list.mobile ul li{float:left;margin-right:20px;}
+#academy_movie .cf_list.mobile ul li div{width:170px;}
+
+#academy_movie .cf_tab.mobile{width:100%;padding-top:10px;}*/
+#academy_movie .search_true{text-align:left !important}
+#academy_movie .search_true .ico{text-align:center;width:25px;height:25px;display: block;margin: 0 auto;} /*0805*/
+#academy_movie .search_true p{display:inline;}
+
+#academy_riverinfor .lecture_left.mobile{width:92%;margin:0;}
+#academy_riverinfor .lecture_right.mobile{width:100%;overflow:hidden;padding:0;}
+#academy_riverinfor .lecture_right.mobile p{width:290px;float:left;margin:40px 40px 0 40px;padding-bottom:40px;}
+#academy_riverinfor .lecture_right.mobile p img{width:100%;}
+#academy_riverinfor .lecture_right.mobile ul{width:40%;float:left;margin-top:40px;background: url(../images/academy/corse_listbg.gif) repeat-x left top;}/*0806*/
+#academy_riverinfor .lecture_right.mobile ul li{width:100%;background: url(../images/academy/corse_listbg.gif) repeat-x left top;}/*0806*/
+#academy_riverinfor .lecture_right.mobile .lecture_btn{clear:both;padding:10px 0;text-align:left;padding-left:412px;}
+#academy_riverinfor .lecture_btn.mobile{display:none;}
+#academy_riverinfor .lecture_btn_show{display:none;}
+#academy_riverinfor .lecture_btn_show.mobile{display:block;text-align:center;margin-top:10px;padding-top:20px;background-image:none;}/*0806*/
+
+/*  포토 스튜디오 */
+#academy_studio .shopinfo_head span{height:44px;line-height:44px;float:right;color:#ccc;font-size:12px;}
+#academy_studio .shopinfo_head span em{font-style:normal;font-weight:bold;}
+#academy_studio h4{clear:both;margin:20px 0;color:#fff;font-size:22px;font-weight:bold;font-family:'나눔고딕','NanumGothic';}
+#academy_studio .studio_all{width:100%;height:458px;position:relative;}
+#academy_studio .studio_all:after{content:"";display:block;clear:both;}
+#academy_studio .studio_sumbox{width:90px;/* float:left; */margin-right:20px;position:absolute;left:0;top:0;}
+#academy_studio .studio_sumbox ul li{width:90px;height:90px;margin-bottom:2px;list-style:none;}
+#academy_studio .studio_sumbox ul li a{display:inline-block;overflow:hidden;}
+#academy_studio .studio_sumbox ul li span{width:100%;height:100%;display:block;}
+#academy_studio .studio_sumbox ul li.off a{border:0;}
+#academy_studio .studio_sumbox ul li.on a{border:2px solid #f05a23;}
+#academy_studio .studio_sumbox ul li.on img{display:block;margin:-2px;border:0;}
+#academy_studio .studio_imgbox{width:850px;height:458px;/* float:left; */position:absolute;right:0;top:0;}
+#academy_studio .studio_imgbox .studio_img .studio_arow{width:40px;height:40px;display:block;overflow:hidden;position:absolute;right:240px;top:0;background:url(../images/shopinfo/coex_arrow_btn.gif) no-repeat 0 0;}
+#academy_studio .studio_info{width:240px;height:458px;position:absolute;right:0;top:0;line-height:18px;background-color:#000;font-size:12px;color:#999999;background:url(../images/shopinfo/opcity_bg.png) no-repeat 0 0;}
+#academy_studio .studio_info > ul{width:190px;margin:30px 0 0 30px;}
+#academy_studio .studio_info > ul > li{border-bottom:1px solid #27262a;padding:10px 0;list-style:none;}
+#academy_studio .studio_info > ul > li.last{padding-bottom:0;border-bottom:0;}
+#academy_studio .studio_info > ul > li > span{display:block;}
+#academy_studio .studio_info ul > li > span:first-child{color:#f05a23;font-size:16px;font-weight:bold;font-family:'나눔고딕','NanumGothic';}
+#academy_studio .studio_info ul > li > span + span{margin-top:10px;}
+#academy_studio .studio_info ul > li > span + ul{margin-top:10px;}
+#academy_studio .studio_info p{text-align:center;margin-top:56px;}
+#academy_studio .studio_info p.mt60{margin-top:60px;}
+
+#academy_studio .studio_info p.mt186{margin-top:186px;}
+#academy_studio .rentals{width:92%;padding:20px 4% 45px;background-color:#fff;font-size:12px;}
+#academy_studio .rentals .rentals_day{text-align:center;padding-bottom:20px;color:#f05a23;border-bottom:3px solid #f05a23;font-size:20px;font-weight:bold;font-family:'Arial';}
+#academy_studio .rentals .rentals_day span{margin:0 20px;height:24px;line-height:24px;}
+#academy_studio .rentals .rentals_day img{vertical-align:top;}
+
+#academy_studio .rentals_list{border-bottom:1px dashed #d7d7d7;}
+#academy_studio .rentals_list div{float:left;margin:0 30px;padding:10px 30px 0 0;background:url('../images/academy/rentals_list_bg.gif') no-repeat right 11px;}
+#academy_studio .rentals ul{overflow:hidden;color:#000;font-weight:bold;padding:0 0 10px;}
+#academy_studio .rentals ul > li{list-style:none;float:left;padding-right:33px;padding-top:10px;}
+
+#academy_studio .rentals ul > li.gray{color:#777;}
+#academy_studio .rentals ul > li.last{padding-right:0;}
+#academy_studio .location_text{overflow:hidden;background-color:#fff;color:#333;font-size:12px;padding:40px 45px;}
+#academy_studio .location_text div.left{width:150px;float:left;margin-right:20px;color:#f05a23;font-weight:bold;font-size:16px;font-family:'나눔고딕';}
+#academy_studio .location_text div.left p:first-child{height:40px;;border-bottom:2px solid #f05a23;}
+#academy_studio .location_text div.left p:first-child + p{padding-top:20px;}
+#academy_studio .location_text div.center{width:340px;float:left;margin-right:20px;}
+#academy_studio .location_text div.center p:first-child{height:40px;border-bottom:2px solid #ccc;}
+#academy_studio .location_text div.center p:first-child + p{padding-top:5px;line-height:20px;}
+#academy_studio .location_text div.right{width:340px;float:left;}
+#academy_studio .location_text div.right p:first-child{height:40px;border-bottom:2px solid #ccc;}
+#academy_studio .location_text div.right p:first-child + p{padding-top:5px;line-height:20px;}
+#academy_studio .location_text strong{display:block;margin:20px 0 10px;}
+#academy_studio .info{padding:25px 40px;background-color:#eee;font-size:12px;color:#000;}
+#academy_studio .info strong{padding-left: 25px;font-size: 13px;color: #000;background: url('../images/news_event/event_main_scrap_b.png') no-repeat;display:inline-block;width:100%;font-family:'나눔고딕';}
+#academy_studio .info ul{margin-top:5px;display: inline-block;}
+#academy_studio .info ul li{width:100%;list-style:none;letter-spacing:-1px;height:17px;border:none;margin: 4px 0;line-height:20px;padding-left:20px;background: url('../images/news_event/event_main_scrap_c.png') no-repeat 1%;}
+
+/*  포토 스튜디오 리사이즈 */
+#academy_studio .show_coex_info{width:100%;background-color:#000;font-size:12px;display:none;}
+#academy_studio .show_coex_info .coex_left{/*width:24.8%;height:130px; float:left; */padding:10px 0 0 30px;}
+#academy_studio .show_coex_info .coex_left.last{border:0;}
+#academy_studio .show_coex_info .coex_left p{margin-bottom:5px;line-height:15px;}
+#academy_studio .show_coex_info .coex_left p:first-child{margin-top:6px;color:#f05a23;font-weight:bold;font-family:'나눔고딕','NanumGothic';font-size:14px;}
+#academy_studio .show_coex_info .btn{clear:both;padding:10px 0 20px 30px;/* text-align:center; */}
+
+#academy_studio .studio_all.mobile{height:690px;}
+#academy_studio .studio_all.mobile .studio_imgbox{width:84.5%;}
+#academy_studio .studio_all.mobile .studio_imgbox .studio_img{width:100%;}
+#academy_studio .studio_all.mobile .studio_imgbox .studio_img img{width:100%;}
+#academy_studio .studio_all.mobile .studio_info{display:none;}
+#academy_studio .studio_all.mobile .studio_arow{display:none;}
+#academy_studio .studio_all.mobile .show_coex_info{display:block;}
+#academy_studio .location.mobile img{width:100%;}
+#academy_studio .location_text.mobile .right{width:100%;}

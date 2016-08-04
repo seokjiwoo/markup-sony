@@ -1,0 +1,843 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family:"돋움";
+	color:#666;
+
+}
+a{ cursor:pointer;}
+a:link {text-decoration: none; font-weight:bold; color:#06F }
+a:visited {text-decoration: none; font-weight:bold; color:#06F }
+a:active {text-decoration: none;  font-weight:bold; color:#06F}
+a:hover {text-decoration: underline; font-weight:bold; color:red;}
+.state{ margin:10px; font-size:12px; }
+.ing{ color:#F90}
+.end{ color:#03F;}
+.title{ font-size:30px; margin:10px; color:#033;}
+table { background-color:#06C; font-size:12px;}
+table td{ background-color:#FFF; height:24px;line-height:24px; padding-left:5px;padding-RIGHT:5px;}
+table th{ background-color:#eee; font-weight:bold; height:30px; line-height:30px; color:#06F; }
+</style>
+</head>
+
+<body>
+<div class="title">Sony alpha</div>
+<div class="state">상태정보 <SPAN>진행전</SPAN>, <SPAN class="ing">진행중</SPAN>, <span class="end">완료</span>  </div>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1">
+  <tr>
+    <th width="10%">cate</th>
+    <th width="10%">1deps</th>
+    <th width="10%">2deps</th>
+    <th width="10%">3deps</th>
+    <th width="10%">4deps</th>
+    <th>마크업</th>
+    <th width="10%">action</th>
+    <th width="10%">note</th>
+    <th>&nbsp;</th>
+  </tr>
+  <tr>
+    <td>MAIN</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="ing"><a href="http://testalpha.sony.co.kr/webroot/main.jsp">MAIN</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>PRODUCT</td>
+    <td>BODY</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/product/product_body.jsp?pageNum=1_1">MAIN</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>LENS</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/product/product_lens.jsp?pageNum=1_2">MAIN</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>ACCESSORY</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/product/product_accessory.jsp?pageNum=1_3">MAIN</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/product/product_list.jsp?pageNum=1_3_1_1">LIST</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/product/search.jsp?pageNum=1_1">SEARCH</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/product/search_null.jsp?pageNum=1_1">SEARCH_NULL</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>DETAIL</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/product/product_detail_gallery.jsp?pageNum=1_1_1_1">GALLERY</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>DETAIL</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/product/product_detail_relation.jsp?pageNum=1_1_1_1">RELATION</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>GALLERY</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/gallery/gallery_picture.jsp?pageNum=2_2">제품사진</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/gallery/gallery_author.jsp?pageNum=2_1">작가사진</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/gallery/gallery_media.jsp?pageNum=2_3">제품영상</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/gallery/gallery_search.jsp?pageNum=2_3">SEARCH</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/gallery/gallery_search_null.jsp?pageNum=2_3">SEARCH_NULL</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>NEWS&amp;EVENT</td>
+    <td>공지/보도자료</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/notice_detail.jsp?pageNum=3_3">LIST</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/notice_search.jsp?pageNum=3_3">SEARCH</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/notice_search_null.jsp?pageNum=3_3">SEARCH_NULL</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>이벤트</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_main.jsp?pageNum=3_1">이벤트 메인</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_list.jsp?pageNum=3_1">이벤트 리스트</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>스크랩이벤트</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_scrap_list.jsp?pageNum=3_1">LIST</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_scrap_search.jsp?pageNum=3_1">SEARCH</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_scrap_search_null.jsp?pageNum=3_1">SEARCH_NULL</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_scrap_change.jsp?pageNum=3_3">CHANGE</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>셀카콘테스트</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_contest.jsp?pageNum=3_1">LIST</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_contest_search.jsp?pageNum=3_1">SEARCH</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_contest_search_null.jsp?pageNum=3_1">SEARCH_NULL</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_contest_regist.jsp?pageNum=3_1">REGIST</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_contest_change.jsp?pageNum=3_1">CHANGE</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_contest_pop.jsp?pageNum=3_1">POP</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr><tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>후기작성이벤트</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_comments.jsp?pageNum=3_1">LIST</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_comments_search.jsp?pageNum=3_1">SEARCH</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_comments_search_null.jsp?pageNum=3_1">SEARCH_NULL</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_comments_regist.jsp?pageNum=3_1">REGIST</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_comments_change.jsp?pageNum=3_1">CHANGE</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_comments_detail.jsp?pageNum=3_1">DETAIL</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr><tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>지난이벤트</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_old.jsp?pageNum=3_1">LIST</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>당첨자발표</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/event_winner.jsp?pageNum=3_1">LIST</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>서포터즈리뷰어</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/supporters_gallery.jsp?pageNum=3_1">서포터즈갤러리</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/supporters_recru.jsp?pageNum=3_1">모집중인서포터즈</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/supporters_political.jsp?pageNum=3_1">모집중인서포터즈수정</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/supporters_enrolment.jsp?pageNum=3_1">모집중인서포터즈등록</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/event/supporters_recruend.jsp?pageNum=3_1">종료된서포터즈/리뷰어</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>윈도우팝업</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:open_win('http://testalpha.sony.co.kr/webroot/event/event_pass_pop.jsp?pageNum=3_1','402','227')" >비밀번호입력</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:open_win('http://testalpha.sony.co.kr/webroot/event/event_review_pop.jsp?pageNum=3_1','402','258')">리뷰어모집수정하기</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>ACADEMY</td>
+    <td>강좌신청</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/academy/academy_list.jsp?pageNum=4_1">강좌신청목록</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/academy/academy_calendar.jsp?pageNum=4_1">강좌신청달력</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/academy/academy_search.jsp?pageNum=4_1">강좌검색결과</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/academy/academy_nosearch.jsp?pageNum=4_1">강좌검색결과없음</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>강좌동영상</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/academy/academy_movie.jsp?pageNum=4_2">강좌동영상</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/academy/academy_info.jsp?pageNum=4_1">강좌상세페이지</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>윈도우팝업</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:open_win('http://testalpha.sony.co.kr/webroot/academy/academy_confirm_pop.jsp?pageNum=3_1','615','650')">아카데미수강신청확인</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:open_win('http://testalpha.sony.co.kr/webroot/academy/academy_login_pop.jsp?pageNum=3_1','613','333')">고객지원사이트로그인</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:open_win('http://testalpha.sony.co.kr/webroot/academy/academy_admin_pop.jsp?pageNum=3_1','613','687')">나의수강관리</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:open_win('http://testalpha.sony.co.kr/webroot/academy/academy_reserv_pop.jsp?pageNum=3_1','614','487')">세미나룸예약신청</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:open_win('http://testalpha.sony.co.kr/webroot/academy/academy_cancel_pop.jsp?pageNum=3_1','613','387')">세미나룸예약취소</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>SHOP INFO</td>
+    <td>대리점 정보</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/shopinfo/shopinfo_searchnone.jsp?pageNum=5_2">오프라인대리점검색결과없음</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/shopinfo/shopinfo_search.jsp?pageNum=5_2">오프라인대리점검색결과있음</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/shopinfo/shopinfo_onlinestore.jsp?pageNum=5_3">온라인대리점</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/shopinfo/shopinfo_offstore.jsp?pageNum=5_2">오프라인대리점</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>SONY STORE</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/shopinfo/shopinfo_store.jsp?pageNum=5_1">스토어</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <!-- <tr>
+    <td>ETC</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/etc/etc_utilization_pop.jsp?pageNum=4_1">이용약관레이어LP</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+   <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/etc/etc_individual_pop.jsp?pageNum=4_1">개인정보취급방침LP</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+   <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/etc/etc_counselinfo_pop.jsp?pageNum=4_1">상담안내LP</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/academy/academy_courseinfo_pop.jsp?pageNum=4_1">수강신청안내LP</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/academy/academy_location_pop.jsp?pageNum=4_1">위치안내LP</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  -->
+  <tr>
+    <td>ETC</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/etc/etc_error.jsp?pageNum=4_1">에러알림페이지</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><a href="http://testalpha.sony.co.kr/webroot/etc/etc_error.jsp?pageNum=4_1">시스템정검페이지</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>이용약관 </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>페이지 하단에 버튼을 클릭하시면 확인할 수 있습니다.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>개인정보취급방침</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>페이지 하단에 버튼을 클릭하시면 확인할 수 있습니다.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>상담안내</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>페이지 하단에 버튼을 클릭하시면 확인할 수 있습니다.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>사이트맵</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>페이지 하단에 버튼을 클릭하시면 확인할 수 있습니다.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+</table>
+<br />
+<br />
+<script type="text/javascript">
+function open_win($str,$w,$h){
+ window.open($str,"",
+ "width="+$w+",height="+$h+",scrollbars=yes,resizeable=no,left=150,top=150","");
+
+
+}
+</script>
+
+</body>
+</html>

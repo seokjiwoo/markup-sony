@@ -1,0 +1,108 @@
+@charset "utf-8";
+/********************************************
+*********************************************
+   Project ===== 소니 알파
+   FileName === shopinfo.css
+   Date ======= 2013-07-18
+   Last ======= 2012-00-00
+*********************************************
+********************************************/
+
+.shopinfo_head{width:100%;margin:20px 0;}
+.shopinfo_head:after{content:"";display:block;clear:both;}
+.shopinfo_head h3{height:44px;float:left;line-height:44px;zoom:1;*display:inline vertical-align:top;font-size:30px;font-weight:bold;color:#f05a23;font-family:'나눔고딕','NanumGothic';}
+.shopinfo_body.bgfff{background-color:#fff;}
+
+/* SONY STORE */
+#shopinfo_store h4{clear:both;margin:20px 0;color:#fff;font-size:22px;font-weight:bold;font-family:'나눔고딕','NanumGothic';}
+#shopinfo_store .sony_coexall{width:100%;height:458px;position:relative;}
+#shopinfo_store .sony_coexall:after{content:"";display:block;clear:both;}
+#shopinfo_store .sony_coexall2{width:100%;height:458px;position:relative;}
+#shopinfo_store .sony_coexall2:after{content:"";display:block;clear:both;}
+#shopinfo_store .coex_sumbox{width:90px;/* float:left; */margin-right:20px;position:absolute;left:0;top:0;} /* 0803 */
+#shopinfo_store .coex_sumbox ul li{width:90px;height:90px;margin-bottom:2px;list-style:none;}
+#shopinfo_store .coex_sumbox ul li a{display:inline-block;overflow:hidden;}
+#shopinfo_store .coex_sumbox ul li span{width:100%;height:100%;display:block;}
+#shopinfo_store .coex_sumbox ul li.off a{border:0;}
+#shopinfo_store .coex_sumbox ul li.on a{border:2px solid #f05a23;}
+#shopinfo_store .coex_sumbox ul li.on img{display:block;margin:-2px;border:0;}
+#shopinfo_store .coex_imgbox{width:850px;height:458px;/* float:left; */position:absolute;right:0;top:0;} /* 0803 */
+/* #shopinfo_store .coex_imgbox{width:850px;height:458px;position:relative;} */
+#shopinfo_store .coex_imgbox .coex_img .coex_arow{width:40px;height:40px;display:block;overflow:hidden;position:absolute;right:240px;top:0;background:url(../images/shopinfo/coex_arrow_btn.gif) no-repeat 0 0;}
+#shopinfo_store .coex_info{width:240px;height:458px;position:absolute;right:0;top:0;line-height:18px;background-color:#000;font-size:12px;color:#999999;background:url(../images/shopinfo/opcity_bg.png) no-repeat 0 0;}
+#shopinfo_store .coex_info > ul{width:190px;margin:30px 0 0 30px;}
+#shopinfo_store .coex_info > ul > li{border-bottom:1px solid #27262a;padding:10px 0;list-style:none;}
+#shopinfo_store .coex_info > ul > li.last{padding-bottom:0;border-bottom:0;}
+#shopinfo_store .coex_info > ul > li > span{display:block;}
+#shopinfo_store .coex_info ul > li > span:first-child{color:#f05a23;font-size:16px;font-weight:bold;font-family:'나눔고딕','NanumGothic';}
+#shopinfo_store .coex_info ul > li > span + span{margin-top:10px;}
+#shopinfo_store .coex_info ul > li > span + ul{margin-top:10px;}
+#shopinfo_store .coex_info ul > li > span.tel_num{color:#ccc;font-size:14px;font-weight:bold;font-family:'나눔고딕','NanumGothic';}
+#shopinfo_store .coex_info p{text-align:center;margin-top:18px;}
+#shopinfo_store .coex_info p.mt60{margin-top:60px;}
+
+/* 오프라인 대리점, 결과있음, 결과없음 */
+#shopinfo_offline .gnb_search1{width:100%;height:50px;margin:0 0 10px 0;padding:20px 0 0 0;background-color:#eee;}
+#shopinfo_offline .gnb_search1 .gnb_search_in{overflow:hidden;padding-left:20px;}/*0806*/
+#shopinfo_offline .gnb_search1 p{width:60px;height:30px;line-height:30px;float:left;margin-right:30px;font-size:14px;font-weight:bold;color:#333333;font-family:'나눔고딕','NanumGothic';}
+#shopinfo_offline .gnb_search1 input{width:240px;height:28px;padding-left:6px;line-height: 23px;margin-left:2px;background-color:#fff;border-left: 1px solid #bbbbbb;
+border-right: 1px solid #d3d3d3;border-bottom: 1px solid #d3d3d3;border-top:1px solid #b2b2b2;font-family: "돋움";font-size: 12px;color: #888888;margin-top: 2px;float: left;}
+#shopinfo_offline .gnb_search1 img{margin-top:2px;float:left;}
+#shopinfo_offline #select_box{margin-right:5px;}
+#shopinfo_offline .shopinfo_body{padding:40px 45px;background-color:#fff;}
+#shopinfo_offline .shopinfo_body.padding_none{padding:0;}
+#shopinfo_offline .offline_shop{width:100%;background-color:#fff;font-size:12px;}
+#shopinfo_offline .offline_shop > table{width:100%;border-collapse:collapse;}
+#shopinfo_offline .offline_shop > table > caption{display:none;}
+#shopinfo_offline .offline_shop > table > thead > tr > th{background:url(../images/shopinfo/thead_bar.gif) no-repeat right 12px;font-weight:normal;height:35px;background-color:#f05a23;text-align:center;color:#fff;}
+#shopinfo_offline .offline_shop > table > thead > tr > th.last{background-image:none;}
+#shopinfo_offline .offline_shop > table > tbody > tr > td{height:58px;border-bottom:1px solid #e5e5e5;text-align:center;}
+#shopinfo_offline .offline_shop > table > tbody > tr > td > span{font-weight:bold;color:#000;}
+#shopinfo_offline .offline_shop > table > tbody > tr > td > ul{text-align:left;margin-left:10px;}
+#shopinfo_offline .offline_shop > table > tbody > tr > td > ul > li{height:13px;padding-left:20px;color:#333333;list-style:none;}
+#shopinfo_offline .offline_shop > table > tbody > tr > td > ul > li:first-child{margin-bottom:7px;}
+#shopinfo_offline .offline_shop > table > tbody > tr > td > ul > li.tel_num{background:url(../images/shopinfo/ico_address.gif) no-repeat 0 0;}
+#shopinfo_offline .offline_shop > table > tbody > tr > td > ul > li.off_adr{background:url(../images/shopinfo/ico_address.gif) no-repeat 0 -20px;}
+#shopinfo_offline .offline_shop > table > tbody > tr > td em{color:#f05a23;font-weight:bold;font-style:normal}
+#shopinfo_offline #list_search{margin-bottom:20px;}
+#shopinfo_offline .paging.center{display:block;margin-top:35px;}
+
+/* 온라인대리점 */
+#shopinfo_online .online_shoplist{overflow:hidden;background-color:#fff;}
+#shopinfo_online .online_shoplist > li{width:190px;height:191px;float:left;border:1px solid #e0e0e0;text-align:center;list-style:none;}
+#shopinfo_online .online_shoplist > li > p:first-child{margin:60px 0 20px;}
+#shopinfo_online .online_shoplist > li > p > a{color:#777777;font-size:12px;}
+
+/* 샵인포 리사이즈 */
+#shopinfo_offline .gnb_search1.mobile{height:88px;}
+#shopinfo_offline .gnb_search1.mobile .gnb_search_in{margin:0 0 0 5%;}
+#shopinfo_offline .input_box{float:left;}
+#shopinfo_offline .gnb_search1.mobile .input_box{width:100%;}/*0806*/
+#shopinfo_offline .gnb_search1.mobile .input_box input{width:80%;margin-top:5px;}
+#shopinfo_offline .gnb_search1.mobile .sear_btn{width:35px;height:30px;display:block;float:left;margin-top:5px;}/*0806*/
+#shopinfo_offline .gnb_search1.mobile .sear_btn img{margin:0;}
+
+#shopinfo_offline .shopinfo_body.mobile{padding:40px 20px;background-color:#fff;}
+#shopinfo_offline .shopinfo_body.mobile .offline_shop > table > tbody > tr > td > ul > li{height:auto;}
+
+#shopinfo_store .show_coex_info{width:100%;background-color:#000;font-size:12px;display:none;}
+#shopinfo_store .show_coex_info .coex_left{/*width:24.8%;height:130px; float:left; */padding:10px 0 0 30px;}
+#shopinfo_store .show_coex_info .coex_left.last{border:0;}
+#shopinfo_store .show_coex_info .coex_left p{margin-bottom:5px;line-height:15px;}
+#shopinfo_store .show_coex_info .coex_left p:first-child{margin-top:6px;color:#f05a23;font-weight:bold;font-family:'나눔고딕','NanumGothic';font-size:14px;}
+#shopinfo_store .show_coex_info .btn{clear:both;padding:10px 0 20px 30px;/* text-align:center; */}
+
+#shopinfo_store .store_bnr.mobile img{width:100%;}
+#shopinfo_store .sony_coexall.mobile{height:790px;}
+#shopinfo_store .sony_coexall.mobile .coex_imgbox{width:84.5%;}
+#shopinfo_store .sony_coexall.mobile .coex_imgbox .coex_img{width:100%;}
+#shopinfo_store .sony_coexall.mobile .coex_imgbox .coex_img img{width:100%;}
+#shopinfo_store .sony_coexall.mobile .coex_info{display:none;}
+#shopinfo_store .sony_coexall.mobile .coex_arow{display:none;}
+#shopinfo_store .sony_coexall2.mobile{height:710px;}
+#shopinfo_store .sony_coexall2.mobile .coex_imgbox{width:84.5%;}
+#shopinfo_store .sony_coexall2.mobile .coex_imgbox .coex_img{width:100%;}
+#shopinfo_store .sony_coexall2.mobile .coex_imgbox .coex_img img{width:100%;}
+#shopinfo_store .sony_coexall2.mobile .coex_info{display:none;}
+#shopinfo_store .sony_coexall2.mobile .coex_arow{display:none;}
+#shopinfo_store .show_coex_info.mobile{display:block;}

@@ -1,0 +1,43 @@
+@charset "utf-8";
+/********************************************
+*********************************************  
+   Project ===== 소니 알파
+   FileName === main.css
+   Date ======= 2013-06-24
+   Last ======= 2012-00-00
+*********************************************
+********************************************/
+
+/* 메인 비주얼 */
+#visualmain {height:556px;width:100%;margin-bottom:30px}
+#visualmain .img {height:496px;width:100%;overflow: hidden;position: relative; cursor:pointer}
+#visualmain .img .imgvisual {position:absolute}
+#visualmain .btn_nb {height:60px;width:100%; background-color:#000; font-size:12px; font-family:Arial, Helvetica, sans-serif}
+#visualmain .btn_nb .on {border-top:5px solid #f05a23; color:#f05a23}
+#visualmain .btn_nb .off {border-top:5px solid #000; color:#FFF}
+#visualmain li {display:inline-block; margin:0 15px; padding-top:19px}
+#visualmain ul { text-align:center;}
+
+#rollproduct {margin-bottom:30px; height:350px;}
+.img_product_a57,.img_product_a58,.img_product_a77,.img_product_a99{ width:240px; height:350px}
+#rollproduct .img_product_a57{float:left;background-image:url('/webroot/images/main/img_product_a57.png')}
+#rollproduct .img_product_a58{float:left;background-image:url('/webroot/images/main/img_product_a58.png')}
+#rollproduct .img_product_a77{float:left;background-image:url('/webroot/images/main/img_product_a77.png')}
+#rollproduct .img_product_a99{float:left;background-image:url('/webroot/images/main/img_product_a99.png')}
+#rollproduct .on{border:5px solid #ee5d24; width:230px;height:340px}
+#rollproduct .off{margin:5px; width:230px;height:340px}
+#rollproduct .btn_product_off, .btn_product_on { font-size:12px;width:108px;height:30px; border-bottom:2px solid #7b7b7a; line-height:30px; color:#fff; text-align:center; margin:118px 61px}
+#rollproduct .btn_product_off {background-color:#ee5d24}
+#rollproduct .btn_product_on {background-color:#000;}
+
+#rollevent {margin-bottom:30px;height:220px}
+#rollevent .img_event {float:left}
+#rollevent .text_event {float:left;width:240px;background-color:#000;height:220px}
+#rollevent .text_event ul{margin:30px 20px;font-size:11px}
+#rollevent .text_event li{height:40px;line-height:40px} 
+#rollevent .text_event .border{border-bottom:1px solid #1b1818}
+#rollevent .text_event .on{color:#ee5d24}
+#rollevent .text_event .off{}
+
+#community {margin-bottom:90px; height:220px}
+

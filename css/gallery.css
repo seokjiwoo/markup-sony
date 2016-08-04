@@ -1,0 +1,124 @@
+@charset "utf-8";
+/********************************************
+*********************************************
+   Project ===== 소니 알파
+   FileName === gallery.css
+   Date ======= 2013-07-01
+   Last ======= 2012-00-00
+*********************************************
+********************************************/
+
+
+/* 메인 */
+
+
+.gallery_picture{ font-family:"Tahoma","돋움"; font-size:12px; line-height:21px; display:inline-block;margin-top:20px;}
+.gallery_picture .productimgmain{ float:left; width:480px; height:240px;}
+.gallery_picture .productimg{ float:left; width:240px; height:240px;}
+.gallery_picture .autherimg{ float:left; width:470px; height:225px;  }
+.gallery_picture .autherimg ul{width:432px; display:inline-block;}
+.gallery_picture li{ float:left;list-style:none;width:58px; height:21px; padding-left:8px;}
+.gallery_picture .on{ color:#f05a23; border:1px solid #f05a23; margin:2px;}
+.gallery_picture .off{ color:#fff; margin:3px;background-image:url(/webroot/images/gallery/dot.png); background-position:2px 50%; background-repeat:no-repeat; }
+.gallery_picture .bgcolor{ background-image:url(../images/gallery/bg_gallery_nevi.png)}
+.gallery_picture .br{ width:239px; border-right:1px solid #222}
+.gallery_picture .on a{color:#f05a23; }
+.gallery_picture .off a{color:#fff;}
+.gallery_picture  .productimg .box_mg{margin:62px 46px 0 46px;}
+.gallery_picture  .autherimg .box_mg{margin:62px 19px 0 19px;}
+.gallery_picture .tit{ margin-bottom:18px; float:left;font-size:32px; color:#f05a23; font-family:"나눔고딕"; font-weight:bold; line-height:36px}
+.gallery_picture .productimg  p{ color:#fff; font-size:16px; text-align:center; margin:84px 0 20px 0; font-family:"나눔고딕"}
+.gallery_picture .productimg .sns {margin:0 auto; width:80px;}
+
+.gallery_picture .mb20{ margin-bottom:20px;}
+.gallery_picture .ml20{ margin-right:20px;}
+.gallery_picture .t1{ width:470px; height:470px;float:left}
+.gallery_picture .t2{ width:470px; height:225px;float:left}
+.gallery_picture .t3{ width:225px; height:225px;float:left}
+.gallery_picture .name{ font-family:"나눔고딕"; font-size:12px; color:#fff; text-align:right;  line-height:12px; padding:3px;}
+
+.gallery_picture .t1 .layer{background-image:url(/webroot/images/gallery/img_gallery_author_t1_bg.png); width:470px; height:470px; position:absolute;cursor:pointer;}
+.gallery_picture .t2 .layer{ position:absolute; background-image:url(/webroot/images/gallery/img_gallery_author_t2_bg.png); width:470px; height:225px;  cursor:pointer;}
+.gallery_picture .t3 .layer{ position:absolute; background-image:url(/webroot/images/gallery/img_gallery_author_t3_bg.png); width:225px; height:225px; cursor:pointer;}
+
+.gallery_picture .sns_b{cursor:pointr;  position:relative; text-align:left; margin-top:-20px; display:inline-block; float:left; cursor:pointer; display:inline-block; float:right}
+.gallery_picture .sns_b a{ float:left}
+
+
+.gallery_picture .btn{ text-align:center; width:100%; display:inline-block}
+
+
+
+
+#gallerypop{ display:none;}
+#gallery_pop{width:100%; height:100%; position:absolute; top:0; left:0;filter:alpha(opacity=80);opacity:0.8; z-index:1000; background-color:#000}
+#gallery_pop_con{width:100%;  position:absolute; top:0; left:0; z-index:1100;}
+#gallery_pop_con .con{   margin:0 auto; text-align:center; width:960px;}
+#gallery_pop_con .con_btn{width:960px; height:640px; position:absolute; z-index:100}
+#gallery_pop_con .con_btn .left{ float:left; margin-top:270px; display:inline-block}
+#gallery_pop_con .con_btn .right{ float:right;margin-top:270px;display:inline-block}
+#gallery_pop_con .imgcon{ width:960px; height:640px;background-color:#222; text-align:center}
+#gallery_pop_con .imgcon img{  max-width:960px; max-height:640px;margin:0 auto; }
+#gallery_pop_con .close{ text-align:right; margin:0 0 5px 0;}
+#gallery_pop_con table{ width:960px; height:640px; position:relative;}
+#gallery_pop_con table caption{ display:none}
+
+.gallerypop.mobile{background-color:red;}
+
+/* gallery resize */
+.gallery_picture.mobile .productimg{width:100%;height:240px;}
+.gallery_picture.mobile .productimg.mob_st{width:50%;height:100%;}
+.gallery_picture.mobile .productimg.mob_st img{width:100%;}
+.gallery_picture.mobile .productimg.mob_st2{width:50%;border-right:0;}
+.gallery_picture.mobile .productimg.mob_st2 ul{width:100%;overflow:hidden;}
+.gallery_picture.mobile .productimg.mob_st2 .tit{margin-right:4px;}
+.gallery_picture.mobile .productimg.mob_st3{width:50%;}
+.gallery_picture.mobile .productimg.mob_st3 ul{width:100%;overflow:hidden;}
+.gallery_picture.mobile .productimgmain.mob_st4{width:100%;height:100%;}
+.gallery_picture.mobile .productimgmain.mob_st4 img{width:100%;}
+
+.gallery_picture .new_productimg{display:none;}
+.gallery_picture.mobile .new_productimg{display:block;}
+.gallery_picture.mobile .new_productimg{width:100%;display:block;overflow:hidden;}
+.gallery_picture.mobile .new_productimg .left{width:50%;float:left;}
+.gallery_picture.mobile .new_productimg .left img{width:100%;}
+.gallery_picture.mobile .new_productimg .right{width:50%;float:left;background-color:#121212;}
+.gallery_picture.mobile .new_productimg .right p{color:#fff;font-size: 16px;text-align: center;margin: 136px 0 20px 0;font-family: "나눔고딕";}
+.gallery_picture.mobile .new_productimg .right .sns{margin:0 auto;width:80px;}
+.gallery_picture.mobile .dis_none{display:none;}
+
+.gallery_picture.mobile .autherimg.at_st1{display:none;}
+.gallery_picture.mobile .tit{float:none;}
+.gallery_picture.mobile .autherul{width:100%;}
+.gallery_picture.mobile .layer{display:none;}
+.gallery_picture.mobile .sns_b{margin-top:-40px;}
+.gallery_picture.mobile .at_st2{width:100%;height:100%;margin-bottom:0;margin-bottom:2%;}
+.gallery_picture.mobile .at_st2 img{width:100%;}
+.gallery_picture.mobile .at_st2 .layer{width:49%;height:88%;}
+.gallery_picture.mobile .at_st3{width:100%;height:100%;margin-bottom:2%;margin-right:0;margin-top:0 !important;}
+.gallery_picture.mobile .at_st3 img{width:100%;}
+.gallery_picture.mobile .at_st4{width:100%;height:100%;margin-bottom:2%;}
+.gallery_picture.mobile .at_st4 img{width:100%;}
+.gallery_picture.mobile .at_st5{width:100%;height:100%;margin-bottom:2%;}
+.gallery_picture.mobile .at_st5 img{width:100%;}
+.gallery_picture.mobile .at_st6{width:49%;height:100%;margin-right:2%;margin-bottom:2%;}
+.gallery_picture.mobile .at_st6 img{width:100%;}
+.gallery_picture.mobile .at_st7{width:49%;height:100%;margin-bottom:2%;}
+.gallery_picture.mobile .at_st7 img{width:100%;}
+.gallery_picture.mobile .at_st8{width:49%;height:100%;margin-right:2%;margin-bottom:2%;}
+.gallery_picture.mobile .at_st8 img{width:100%;}
+.gallery_picture.mobile .at_st9{width:49%;height:100%;margin-right:0;margin-bottom:2%;}
+.gallery_picture.mobile .at_st9 img{width:100%;}
+.gallery_picture.mobile .sns_b img{width:40px;height:40px;}
+
+.gallery_media{margin-top:20px;}
+.gallery_media.mobile .movies iframe{width:100%;}
+
+.gallery_media .movies_tab_list{padding:;}
+.gallery_media .movies_tab_list.mobile .gallery_body{width:498px;margin:0;}
+.pdb30{padding-bottom:30px;}
+.mt30{margin-top:30px;}
+
+
+
+
